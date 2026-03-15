@@ -5,7 +5,7 @@ echo -e "Updating server"
 sudo apt-get update && apt-get upgrade -y
 systemctl stop zivpn.service 1> /dev/null 2> /dev/null
 echo -e "Downloading UDP Service"
-wget https://github.com/Badutpsr/zivpn/releases/download/zivpn_1.4.9/zivpn-linux-amd64 -O /usr/local/bin/zivpn 1> /dev/null 2> /dev/null
+wget https://github.com/Badutpsr/zivpn/releases/tag/zivpn-linux-amd64 -O /usr/local/bin/zivpn 1> /dev/null 2> /dev/null
 chmod +x /usr/local/bin/zivpn
 mkdir /etc/zivpn 1> /dev/null 2> /dev/null
 wget https://raw.githubusercontent.com/Badutpsr/zivpn/main/config.json -O /etc/zivpn/config.json 1> /dev/null 2> /dev/null
